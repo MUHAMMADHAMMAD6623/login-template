@@ -1,0 +1,72 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'montserrat', sans-serif;
+}
+
+.container{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container .input-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 0.7rem;
+    width: fit-content;
+}
+.container .input-container .top-section{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.container .input-container input{
+    width: 290px;
+    height: 35px;
+    border: 1px solid rgb(0, 0, 0);
+    border-radius: 0%;
+    padding: 5px;
+    font-size: 1.3rem;
+}
+.container .input-container input:focus{
+    outline: none;
+}
+.container .input-container img{
+    width: 30px;
+    height: 30px;
+    position: relative;
+    right: 37px;
+}
+.container .input-container .top-section button{
+    border-radius: 0;
+    border: none;
+    background-color: black;
+    color: white;
+    padding: 8px;
+    font-size: 1rem;
+    cursor: pointer;
+    position: relative;
+    right: 10px;
+    transition: background-color 0.3s ease-in-out;
+}
+.container .input-container .top-section button:hover{
+    background-color: rgb(54, 54, 54);
+}
+.container .input-container .bottom-section{
+    width: 100%;
+}
+.container .input-container .bottom-section p{
+    display: none;
+    font-weight: 500;
+}
+.container .input-container .bottom-section p span{
+    display: inline;
+}
