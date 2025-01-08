@@ -1,27 +1,33 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Password Strength Checker Template in HTMl, CSS and JavaScript.</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Password Strength Checker</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-
-    <div class="container">
-        <div class="input-container">
-            <div class="top-section">
-                <div class="input">
-                <input type="password" class="input-field">
-                <img src="hide.png" class="eyelogo">
-                </div>
-                <button class="check">Check Strength</button>
-            </div>
-            <div class="bottom-section">
-                <p class="checked">Password Strength: <span id="strength"></span></p>
-            </div>
-        </div>
+  <div class="container">
+    <div class="input">
+      <H2>Login In</H2>
+      <div class="field">
+        <label for="username">Username:</label>
+        <input type="text" id="username" required>
+      </div>
+      <div class="field">
+        <label for="password">Password:</label>
+        <input type="password" id="password" class="input-field1" required>
+        <span id="strength"></span>
+      </div>
+      <div class="field">
+        <label for="confirm-password">Confirm Password:</label>
+        <input type="password" id="confirm-password" class="input-field2" required>
+        <button class="show-hide">Show</button>
+      </div>
+      <button class="button">Submit</button>
+      <p id="message" style="font-size: 1rem;"></p>
     </div>
-    <script src="index.js"></script>
+  </div>
+  <script src="index.js"></script>
 </body>
 </html>
